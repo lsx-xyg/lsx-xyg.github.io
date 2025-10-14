@@ -1,9 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
   repo: lsx-xyg/lsx-xyg.github.io
   branch: main
-  site_id: lsx-xyg.netlify.app
-
+  auth_type: "implicit"
+   
 media_folder: static/images
 public_folder: /images
 
