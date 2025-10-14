@@ -2,7 +2,7 @@ backend:
   name: github
   repo: lsx-xyg/lsx-xyg.github.io
   branch: main
-  auth_type: "implicit"
+  site_id: 908377c4-9db5-4ca5-bfc4-ed8702de19b1
    
 media_folder: static/images
 public_folder: /images
