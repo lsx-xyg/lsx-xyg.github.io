@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on 咸鱼的博客</title><author>咸鱼 (linshengxuan00@163.com)</author>
+    <link>http://localhost:1313/blog/</link>
+    <description>一条热爱生活的咸鱼</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <managingEditor>linshengxuan00@163.com (咸鱼)</managingEditor>
+    <webMaster>linshengxuan00@163.com (咸鱼)</webMaster>
+    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hello, world</title>
+      <link>http://localhost:1313/blog/1.html/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate><author>咸鱼 (linshengxuan00@163.com)</author>
+      <guid>http://localhost:1313/blog/1.html/</guid>
+      <description>&lt;p&gt;2025 年 10 月 14 日&lt;/p&gt;&#xA;&lt;p&gt;我的博客正式建立。&lt;/p&gt;&#xA;&lt;p&gt;愿一切安好。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

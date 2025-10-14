@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>咸鱼的博客</title><author>咸鱼 (linshengxuan00@163.com)</author>
+    <link>http://localhost:1313/</link>
+    <description>一条热爱生活的咸鱼</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <managingEditor>linshengxuan00@163.com (咸鱼)</managingEditor>
+    <webMaster>linshengxuan00@163.com (咸鱼)</webMaster>
+    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hello, world</title>
+      <link>http://localhost:1313/blog/1.html/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate><author>咸鱼 (linshengxuan00@163.com)</author>
+      <guid>http://localhost:1313/blog/1.html/</guid>
+      <description>&lt;p&gt;2025 年 10 月 14 日&lt;/p&gt;&#xA;&lt;p&gt;我的博客正式建立。&lt;/p&gt;&#xA;&lt;p&gt;愿一切安好。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>关于</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>咸鱼 (linshengxuan00@163.com)</author>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;✨ 你可以通过下面这些便捷方式探索我的文字世界：&lt;br&gt;&#xA;📚 &lt;a href=&#34;http://localhost:1313/blog/&#34;&gt;全部文章&lt;/a&gt;、🏷️ &lt;a href=&#34;http://localhost:1313/tags/&#34;&gt;标签管理&lt;/a&gt;、🔍 &lt;a href=&#34;http://localhost:1313/search/&#34;&gt;关键词搜索&lt;/a&gt;、📡 &lt;a href=&#34;http://localhost:1313/index.xml&#34;&gt;RSS 订阅&lt;/a&gt;。&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;1-hello-&#34;&gt;1. Hello ~&lt;/h2&gt;&#xA;&lt;p&gt;📧 如果你想与我交流，欢迎发送电子邮件至 &lt;code&gt;linshengxuan00@163.com&lt;/code&gt;，或者在文章评论区留下你的足迹。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>友情链接</title>
+      <link>http://localhost:1313/friends/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>咸鱼 (linshengxuan00@163.com)</author>
+      <guid>http://localhost:1313/friends/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>搜索</title>
+      <link>http://localhost:1313/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>咸鱼 (linshengxuan00@163.com)</author>
+      <guid>http://localhost:1313/search/</guid>
+      <description>&lt;p&gt;您可以通过以下几种优雅的方式轻松检索我的文章：&lt;/p&gt;&#xA;&lt;p&gt;✨ &lt;strong&gt;&lt;a href=&#34;http://localhost:1313/blog/&#34;&gt;全部文章&lt;/a&gt;&lt;/strong&gt; —— 一览无余，尽览所有精彩篇章&lt;br&gt;&#xA;🏷️ &lt;strong&gt;&lt;a href=&#34;http://localhost:1313/tags/&#34;&gt;标签管理&lt;/a&gt;&lt;/strong&gt; —— 按主题分类，快速定位您感兴趣的内容&lt;br&gt;&#xA;🔍 &lt;strong&gt;&lt;a href=&#34;http://localhost:1313/search/&#34;&gt;关键词搜索&lt;/a&gt;&lt;/strong&gt; —— 输入关键字，精准找到所需文章&lt;br&gt;&#xA;📡 &lt;strong&gt;&lt;a href=&#34;http://localhost:1313/index.xml&#34;&gt;RSS 订阅&lt;/a&gt;&lt;/strong&gt; —— 实时订阅更新，不错过任何一篇新作&lt;/p&gt;&#xA;&lt;p&gt;欢迎随时探索，发现更多精彩！&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>标签</title>
+      <link>http://localhost:1313/tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>咸鱼 (linshengxuan00@163.com)</author>
+      <guid>http://localhost:1313/tags/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>留言</title>
+      <link>http://localhost:1313/message/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>咸鱼 (linshengxuan00@163.com)</author>
+      <guid>http://localhost:1313/message/</guid>
+      <description>&lt;p&gt;哎呀呀，终于盼到贵客光临啦！✨🎉 热烈欢迎欢迎～这里可是个神奇的留言板，一个装满彩虹泡泡和星星火花✨的奇思妙想乐园呢！&lt;/p&gt;&#xA;&lt;p&gt;无论你是想分享快乐的小太阳☀️，还是倾诉悄悄话的月亮船🌙，都可以在这里留下属于你的独特印记～就像小松鼠🐿️在树皮上刻下俏皮的爪印，或是小狐狸🦊在雪地里画出优雅的足迹一样酷炫！&lt;/p&gt;&#xA;&lt;p&gt;快来用文字施展魔法吧，让这片天地记住你独一无二的声音～💫📝&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>简历</title>
+      <link>http://localhost:1313/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>咸鱼 (linshengxuan00@163.com)</author>
+      <guid>http://localhost:1313/resume/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>计划</title>
+      <link>http://localhost:1313/plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>咸鱼 (linshengxuan00@163.com)</author>
+      <guid>http://localhost:1313/plan/</guid>
+      <description>&lt;p&gt;不妨为自己精心拟定几份玲珑小巧的计划清单，让生活如诗如画般徐徐展开。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;div class=&#34;nolist&#34;&gt;&#xA;&lt;h3 id=&#34;-2025-年&#34;&gt;# 2025 年&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 骑行 1500 公里&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 爬山 5 次&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 自驾游 5 次&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 学习一门新的语言&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 发布至少三个开源项目&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;-2024-年&#34;&gt;# 2024 年&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 骑行 1500 公里&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 旅行 5 次&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 读 6 本书&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;-2023-年&#34;&gt;# 2023 年&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 骑行 1000 公里 (1288/1000)&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 读 5 本书 (5/5) 追风筝的人 / 活着 / 曾国藩家书 / 清末民国人口贩卖与家庭生活 / 传习录&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 爬 1 座山 (0/1)&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 独自旅行 1 次 (0/1)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>说说</title>
+      <link>http://localhost:1313/shuoshuo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>咸鱼 (linshengxuan00@163.com)</author>
+      <guid>http://localhost:1313/shuoshuo/</guid>
+      <description>&lt;p&gt;我给博客加了一个“说说”栏目，用于编辑简短的话或心情，没有长篇大论~&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>项目</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>咸鱼 (linshengxuan00@163.com)</author>
+      <guid>http://localhost:1313/projects/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+{{ partial "head.html" . }}
+<body>
+  {{ partial "header.html" . }}
+  <div id="main-wrapper" class="d-flex justify-content-center">
+    <div class="container d-flex flex-column px-xxl-5">
+      {{ partial "content_top.html" . }}
+      <div class="row flex-grow-1">
+        <main class="col-12 col-lg-11 col-xl-9 px-md-4">
+          <article class="px-1">
+            <h1 class="dynamic-title">{{.Title}}</h1>
+            <div class="content">
+              {{ .Site.Params.postHeaderContent | safeHTML }}
+              {{ .Content }}
+              
+              <div id="tags" class="d-flex flex-wrap mx-xl-2">
+                {{ range .Site.Taxonomies.tags }}
+                <div>
+                  <a class="tag" href="{{ .Page.Permalink }}">
+                    {{ .Page.Title }}
+                    <span class="text-muted">({{ .Count }})</span>
+                  </a>
+                </div>
+                {{ end }}
+
+              </div>
+              <div class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2"><div class="license-wrapper">This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> by the author.</div></div>
+
+            </div>
+          </article>
+          {{ partial "footer.html" . }}
+        </main>
+        {{ partial "panel.html" . }}
+      </div>
+    </div>
+  </div>
+
+{{ partial "scripts.html" . }}
+</body>
+</html>
