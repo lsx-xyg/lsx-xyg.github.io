@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: lsx-xyg/lsx-xyg.github.io
   branch: main
   site_id: lsx-xyg.netlify.app
