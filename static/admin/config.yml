@@ -2,6 +2,7 @@ backend:
   name: github
   repo: lsx-xyg/lsx-xyg.github.io
   branch: main
+  site_id: lsx-xyg.netlify.app
 
 media_folder: static/images
 public_folder: /images
