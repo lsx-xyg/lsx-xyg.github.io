@@ -2,7 +2,7 @@ name: Deploy Hugo site to Pages
 
 on:
   push:
-    branches: [ main ]  # 如果您的默认分支是 master，请改为 master
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -11,11 +11,11 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-inprogress: true
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 env:
-  HUGO_VERSION: 0.151.0  # 建议固定一个与本地测试一致的Hugo版本
+  HUGO_VERSION: 0.151.0
 
 jobs:
   deploy:
@@ -24,29 +24,31 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # 1. 检出代码（不需要子模块）
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 获取所有历史记录，有助于更好的增量构建
+
+      # 2. 安装 Hugo（只需要这一步）
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: ${{ env.HUGO_VERSION }}
-          extended: true  # chirpy主题需要extended版本
+          extended: true  # 如果您使用了SCSS等特性，需要extended版本
 
-      - name: Install Node.js (for chirpy theme)
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'  # chirpy主题构建需要Node.js
-
+      # 3. 构建网站
       - name: Build with Hugo
-        run: |
-          hugo --minify --gc --cleanDestinationDir
+        run: hugo --minify --gc --cleanDestinationDir
         env:
-          # 如果您有自定义环境变量，可以在这里添加
           HUGO_ENV: production
 
+      # 4. 上传构建产物
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
+      # 5. 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
