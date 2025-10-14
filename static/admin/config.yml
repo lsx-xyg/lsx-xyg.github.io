@@ -5,6 +5,9 @@ backend:
   auth_type: implicit
   app_id: Ov23liLXEkZ47NvrCtib # 需要替换为你在GitHub OAuth App中获取的真实Client ID
   # client_secret 通过 GitHub Environment Secret 设置，不要写在这里！
+  
+# 启用编辑工作流，可以提供“草稿”、“审核中”、“已就绪”等状态，非常实用
+publish_mode: editorial_workflow
 
 site_url: https://lsx-xyg.github.io
 display_url: https://lsx-xyg.github.io
