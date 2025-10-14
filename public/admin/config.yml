@@ -1,0 +1,45 @@
+backend:
+  name: github
+  repo: lsx-xyg/lsx-xyg.github.io
+  branch: main
+
+media_folder: static/images
+public_folder: /images
+
+collections:
+  - name: "blog"
+    label: "博客文章"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime" }
+      - { label: "描述", name: "description", widget: "string" }
+      - { label: "标签", name: "tags", widget: "list", default: [] }
+      - { label: "分类", name: "categories", widget: "list", default: [] }
+      - { label: "正文", name: "body", widget: "markdown" }
+
+  - name: "pages"
+    label: "页面"
+    files:
+      - name: "about"
+        label: "关于页面"
+        file: "content/about.md"
+        fields:
+          - { label: "标题", name: "title", widget: "string" }
+          - { label: "正文", name: "body", widget: "markdown" }
+
+  - name: "settings"
+    label: "设置"
+    files:
+      - name: "general"
+        label: "基本设置"
+        file: "config/_default/params.toml"
+        fields:
+          - { label: "网站标题", name: "title", widget: "string" }
+          - { label: "网站描述", name: "description", widget: "string" }
+          - { label: "作者", name: "author", widget: "string" }
+          - { label: "Logo", name: "logo", widget: "image" }

@@ -1,115 +1,45 @@
 backend:
   name: github
-  repo: lsx-xyg/lsx-xyg.github.io # 请确保仓库名正确
-  branch: main # 如果您的默认分支是master，请修改为master
-  auth_type: implicit
-  app_id: Ov23liLXEkZ47NvrCtib # 需要替换为你在GitHub OAuth App中获取的真实Client ID
-  # client_secret 通过 GitHub Environment Secret 设置，不要写在这里！
-  
-# 启用编辑工作流，可以提供“草稿”、“审核中”、“已就绪”等状态，非常实用
-publish_mode: editorial_workflow
+  repo: lsx-xyg/lsx-xyg.github.io
+  branch: main
 
-site_url: https://lsx-xyg.github.io
-display_url: https://lsx-xyg.github.io
-logo_url: https://avatars.githubusercontent.com/u/168193748 # 使用您的头像作为CMSlogo
+media_folder: static/images
+public_folder: /images
 
-# 媒体文件设置 (图片等将存放在static目录下)
-media_folder: 'static/images' # 存储路径
-public_folder: '/images' # 网站访问路径
-
-# 集合定义 (定义CMS中可以管理的内容类型)
 collections:
-  # 1. 文章集合 (对应您的 blog 永久链接)
-  - name: 'posts' # 内部标识
-    label: '文章' # CMS中显示的名称
-    label_singular: '文章' # 单数形式
-    folder: 'content/posts' # 内容存储的目录
-    create: true # 允许在CMS中创建新文章
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # 文件名格式，与您的permalink结构匹配
-    editor:
-      preview: true # 启用预览
-    fields:
-      - { label: '标题', name: 'title', widget: 'string' }
-      - { label: '发布时间', name: 'date', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: 'HH:mm:ss', format: 'YYYY-MM-DD HH:mm:ss' }
-      - { label: '正文', name: 'body', widget: 'markdown' }
-      - { label: '摘要', name: 'description', widget: 'string', required: false } # 可选字段
-      - { label: '标签', name: 'tags', widget: 'list', required: false } # 对应front matter的tags
-      - { label: '分类', name: 'categories', widget: 'list', required: false } # 对应front matter的categories
-      - { label: '封面图片', name: 'cover', widget: 'image', required: false } # 文章封面图
-      - { label: '是否草稿', name: 'draft', widget: 'boolean', default: false, required: false }
-
-  # 2. 说说集合 (根据您的菜单配置添加)
-  - name: 'shuoshuo'
-    label: '说说'
-    label_singular: '说说'
-    folder: 'content/shuoshuo'
+  - name: "blog"
+    label: "博客文章"
+    folder: "content/blog"
     create: true
-    slug: '{{slug}}'
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
-      preview: true
+      preview: false
     fields:
-      - { label: '内容', name: 'title', widget: 'string' }
-      - { label: '发布时间', name: 'date', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: 'HH:mm:ss', format: 'YYYY-MM-DD HH:mm:ss' }
-      - { label: '正文', name: 'body', widget: 'markdown' }
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime" }
+      - { label: "描述", name: "description", widget: "string" }
+      - { label: "标签", name: "tags", widget: "list", default: [] }
+      - { label: "分类", name: "categories", widget: "list", default: [] }
+      - { label: "正文", name: "body", widget: "markdown" }
 
-  # 3. 关于页面
-  - name: 'about'
-    label: '关于页面'
-    label_singular: '关于页面'
-    file: 'content/about.md' # 单文件使用file而不是folder
-    create: false # 如果已存在，可以设置为false
-    editor:
-      preview: true
-    fields:
-      - { label: '标题', name: 'title', widget: 'string' }
-      - { label: '正文', name: 'body', widget: 'markdown' }
-
-  # 4. 友链页面
-  - name: 'friends'
-    label: '友链页面'
-    label_singular: '友链页面'
-    file: 'content/friends.md'
-    create: false
-    editor:
-      preview: true
-    fields:
-      - { label: '标题', name: 'title', widget: 'string' }
-      - { label: '正文', name: 'body', widget: 'markdown' }
-
-  # 5. 留言页面
-  - name: 'message'
-    label: '留言页面'
-    label_singular: '留言页面'
-    file: 'content/message.md'
-    create: false
-    editor:
-      preview: true
-    fields:
-      - { label: '标题', name: 'title', widget: 'string' }
-      - { label: '正文', name: 'body', widget: 'markdown' }
-
-  # 6. 项目页面
-  - name: 'projects'
-    label: '项目页面'
-    label_singular: '项目页面'
-    file: 'content/projects.md'
-    create: false
-    editor:
-      preview: true
-    fields:
-      - { label: '标题', name: 'title', widget: 'string' }
-      - { label: '正文', name: 'body', widget: 'markdown' }
-
-  # 7. 全局站点数据 (用于管理导航菜单等，如果chirpy主题支持数据文件)
-  - name: 'config'
-    label: '站点配置'
+  - name: "pages"
+    label: "页面"
     files:
-      - file: 'data/menu.yml' # 假设菜单配置在这里
-        label: '导航菜单'
+      - name: "about"
+        label: "关于页面"
+        file: "content/about.md"
         fields:
-          - { label: '导航项', name: 'main', widget: 'list', fields: [
-              { label: '标识', name: 'identifier', widget: 'string' },
-              { label: '名称', name: 'name', widget: 'string' },
-              { label: '链接', name: 'url', widget: 'string' },
-              { label: '权重', name: 'weight', widget: 'number' }
-            ] }
+          - { label: "标题", name: "title", widget: "string" }
+          - { label: "正文", name: "body", widget: "markdown" }
+
+  - name: "settings"
+    label: "设置"
+    files:
+      - name: "general"
+        label: "基本设置"
+        file: "config/_default/params.toml"
+        fields:
+          - { label: "网站标题", name: "title", widget: "string" }
+          - { label: "网站描述", name: "description", widget: "string" }
+          - { label: "作者", name: "author", widget: "string" }
+          - { label: "Logo", name: "logo", widget: "image" }
