@@ -2,6 +2,10 @@ backend:
   name: github
   repo: lsx-xyg/lsx-xyg.github.io
   branch: main
+  base_url: https://netlify-cms-oauth.netlify.app
+  auth_endpoint: api/auth
+
+
 
 media_folder: static/images
 public_folder: /images
