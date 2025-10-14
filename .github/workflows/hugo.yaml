@@ -24,12 +24,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive  # 必须启用以拉取chirpy主题子模块
-          fetch-depth: 0
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
