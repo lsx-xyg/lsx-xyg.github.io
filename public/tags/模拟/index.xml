@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>测试 on 咸鱼的博客</title><author>咸鱼 (linshengxuan00@163.com)</author>
-    <link>http://localhost:1313/tags/%E6%B5%8B%E8%AF%95/</link>
+    <title>模拟 on 咸鱼的博客</title><author>咸鱼 (linshengxuan00@163.com)</author>
+    <link>http://localhost:1313/tags/%E6%A8%A1%E6%8B%9F/</link>
     <description>一条热爱生活的咸鱼</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <managingEditor>linshengxuan00@163.com (咸鱼)</managingEditor>
     <webMaster>linshengxuan00@163.com (咸鱼)</webMaster>
     <lastBuildDate>Tue, 14 Oct 2025 19:34:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E6%A8%A1%E6%8B%9F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>测试文章2</title>
       <link>http://localhost:1313/blog/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02.html/</link>

@@ -7,7 +7,7 @@
 <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
   <div class="access">
     <section id="access-lastmod">
-      <h2 class="panel-heading">Recently Updated</h2>
+      <h2 class="panel-heading">最近更新</h2>
       <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
         {{/*
         1. .Site.RegularPages: 获取所有常规页面
@@ -20,7 +20,7 @@
       </ul>
     </section>
     <section>
-      <h2 class="panel-heading">Trending Tags</h2>
+      <h2 class="panel-heading">热门标签</h2>
       <div class="d-flex flex-wrap mt-3 mb-1 me-3">
         {{/*
         1. .Site.Taxonomies.tags: 获取所有标签
@@ -38,7 +38,7 @@
 
     {{ else }}
     <section>
-      <h2 class="panel-heading">About Me</h2>
+      <h2 class="panel-heading">关于我</h2>
       <div class="content mt-2 lh-lg">
         这是我的个人博客，已经运行了 <span id="days"></span> 天，写了 {{ $articleCount }} 篇文章，共 {{ $totalWordCount }} 字。
         <br>

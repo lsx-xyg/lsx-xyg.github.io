@@ -11,10 +11,10 @@
     <lastBuildDate>Tue, 14 Oct 2025 19:34:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>测试文章</title>
-      <link>http://localhost:1313/blog/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0.html/</link>
+      <title>测试文章2</title>
+      <link>http://localhost:1313/blog/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02.html/</link>
       <pubDate>Tue, 14 Oct 2025 19:34:00 +0800</pubDate><author>咸鱼 (linshengxuan00@163.com)</author>
-      <guid>http://localhost:1313/blog/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0.html/</guid>
+      <guid>http://localhost:1313/blog/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02.html/</guid>
       <description>&lt;p&gt;测试&lt;/p&gt;</description>
     </item>
     <item>
@@ -65,13 +65,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>咸鱼 (linshengxuan00@163.com)</author>
       <guid>http://localhost:1313/resume/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>计划</title>
-      <link>http://localhost:1313/plan/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>咸鱼 (linshengxuan00@163.com)</author>
-      <guid>http://localhost:1313/plan/</guid>
-      <description>&lt;p&gt;不妨为自己精心拟定几份玲珑小巧的计划清单，让生活如诗如画般徐徐展开。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;div class=&#34;nolist&#34;&gt;&#xA;&lt;h3 id=&#34;-2025-年&#34;&gt;# 2025 年&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 骑行 1500 公里&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 爬山 5 次&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 自驾游 5 次&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 学习一门新的语言&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 发布至少三个开源项目&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;-2024-年&#34;&gt;# 2024 年&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 骑行 1500 公里&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 旅行 5 次&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 读 6 本书&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;-2023-年&#34;&gt;# 2023 年&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 骑行 1000 公里 (1288/1000)&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 读 5 本书 (5/5) 追风筝的人 / 活着 / 曾国藩家书 / 清末民国人口贩卖与家庭生活 / 传习录&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 爬 1 座山 (0/1)&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 独自旅行 1 次 (0/1)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>说说</title>
