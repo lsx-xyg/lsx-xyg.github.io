@@ -8,8 +8,15 @@
     <language>zh-cn</language>
     <managingEditor>linshengxuan00@163.com (咸鱼)</managingEditor>
     <webMaster>linshengxuan00@163.com (咸鱼)</webMaster>
-    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Oct 2025 19:34:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>测试</title>
+      <link>http://localhost:1313/categories/%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Tue, 14 Oct 2025 19:34:00 +0800</pubDate><author>咸鱼 (linshengxuan00@163.com)</author>
+      <guid>http://localhost:1313/categories/%E6%B5%8B%E8%AF%95/</guid>
+      <description></description>
+    </item>
     <item>
       <title>随笔</title>
       <link>http://localhost:1313/categories/%E9%9A%8F%E7%AC%94/</link>

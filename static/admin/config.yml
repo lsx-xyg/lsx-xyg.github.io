@@ -1,46 +1,83 @@
+locale: "zh"
+logo:
+  src: "/images/logo.png"
+  show_in_header: true
+
+search: false
+
+# 导航栏顶部展示url
+# display_url:
+
 backend:
   name: github
   repo: lsx-xyg/lsx-xyg.github.io
   branch: main
   site_id: 908377c4-9db5-4ca5-bfc4-ed8702de19b1
+  # 提交消息模板配置
+  commit_messages:
+    create: "【内容创建】添加新的{{collection}}：{{slug}} - 由{{author-name}}创建"
+    update: "【内容更新】修改{{collection}}：{{slug}} - 由{{author-name}}更新"
+    delete: "【内容删除】移除{{collection}}：{{slug}} - 由{{author-name}}删除"
+    uploadMedia: "【媒体上传】添加文件：{{path}} - 由{{author-name}}上传"
+    deleteMedia: "【媒体删除】移除文件：{{path}} - 由{{author-name}}删除"
+    openAuthoring: "【协作提交】{{message}} - 由{{author-name}}提交"
    
 media_folder: static/images
 public_folder: /images
 
 collections:
   - name: "blog"
-    label: "博客文章"
+    label: "博客"
     folder: "content/blog"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    editor:
-      preview: false
     fields:
+      # 基本元数据
       - { label: "标题", name: "title", widget: "string" }
+      - { label: "简短标题", name: "linkTitle", widget: "string", required: false }
+      - { label: "描述", name: "description", widget: "text" }
+      - { label: "摘要", name: "summary", widget: "text", required: false }
+      
+      # 日期相关
       - { label: "发布日期", name: "date", widget: "datetime" }
-      - { label: "描述", name: "description", widget: "string" }
-      - { label: "标签", name: "tags", widget: "list", default: [] }
-      - { label: "分类", name: "categories", widget: "list", default: [] }
-      - { label: "正文", name: "body", widget: "markdown" }
-
-  - name: "pages"
-    label: "页面"
+      - { label: "最后修改时间", name: "lastmod", widget: "datetime", required: false }
+      - { label: "过期时间", name: "expiryDate", widget: "datetime", required: false }
+      
+      # 分类和标签
+      - { label: "分类", name: "categories", widget: "select", multiple: true, options: ["随笔", "周刊", "技术"], default: ["随笔"] }
+      - { label: "标签", name: "tags", widget: "list", required: false }
+      - { label: "关键词", name: "keywords", widget: "list", required: false }
+      
+      # 发布状态
+      - { label: "草稿", name: "draft", widget: "boolean", default: false }
+      
+      # URL 管理
+      - { label: "自定义URL", name: "url", widget: "string", required: false }
+      - { label: "别名", name: "aliases", widget: "list", required: false }
+      - { label: "权重", name: "weight", widget: "number", value_type: "int", required: false }
+      
+      # 图片和资源
+      - { label: "特色图片", name: "image", widget: "image", required: false }
+      
+      # 布局和模板
+      - { label: "布局", name: "layout", widget: "hidden", default: "single" }
+      - { label: "内容格式", name: "markup", widget: "hidden", default: "markdown" }
+      
+      # 正文内容
+      - { label: "正文内容", name: "body", widget: "markdown" }
+      
+  - name: "shuoshuo-single"
+    label: "说说（所有）"
     files:
-      - name: "about"
-        label: "关于页面"
-        file: "content/about.md"
-        fields:
-          - { label: "标题", name: "title", widget: "string" }
-          - { label: "正文", name: "body", widget: "markdown" }
-
-  - name: "settings"
-    label: "设置"
-    files:
-      - name: "general"
-        label: "基本设置"
-        file: "config/_default/params.toml"
-        fields:
-          - { label: "网站标题", name: "title", widget: "string" }
-          - { label: "网站描述", name: "description", widget: "string" }
-          - { label: "作者", name: "author", widget: "string" }
-          - { label: "Logo", name: "logo", widget: "image" }
+    - name: "all_shuoshuo"
+      label: "所有说说"
+      file: "content/shuoshuo.md"
+      fields:
+        - label: "说说列表"
+          name: "posts"
+          widget: "list"
+          fields:
+            - { label: "内容", name: "content", widget: "text" }
+            - { label: "发布时间", name: "date", widget: "datetime" }
+            - { label: "心情图标", name: "mood", widget: "select", options: ["😊", "😢", "🤔", "🎉", "❤️"], required: false }
+            - { label: "图片", name: "image", widget: "image", required: false }
