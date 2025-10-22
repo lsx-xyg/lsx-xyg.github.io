@@ -17,7 +17,7 @@ markup:
       unsafe: true
   tableOfContents:
     startLevel: 2 # 从 h2 开始
-    endLevel: 3 # 到 h4 结束
+    endLevel: 4 # 到 h4 结束
     ordered: false # 生成 ul 而不是 ol
 
 outputs:
