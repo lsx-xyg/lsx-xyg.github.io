@@ -3,7 +3,7 @@ title: 通用入参出参设计
 slug: universal-input-and-output-parameters-design-z1tfibi
 url: /post/universal-input-and-output-parameters-design-z1tfibi.html
 date: '2026-02-24 13:59:20+08:00'
-lastmod: '2026-03-06 19:25:50+08:00'
+lastmod: '2026-03-06 19:26:40+08:00'
 toc: true
 isCJKLanguage: true
 ---
